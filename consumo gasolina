@@ -1,0 +1,68 @@
+import javax.swing.JOptionPane;
+
+public class Consumo_gasolina {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double litros; 
+		double trip; 
+		double consumo;
+		double gasolina; 
+		double custo; 
+		int option; 
+		double distancia;
+		double vmedia; 
+		double tempo; 
+		
+		
+		
+		String opcao_usuario1 = JOptionPane.showInputDialog("Deseja calcular seu consumo? \n Para NÂO, digite 0 \n Para SIM digite 1");
+		option= Integer.parseInt(opcao_usuario1);
+		
+				
+			if (option != 0)
+				
+			{
+		
+				String litros_usados = JOptionPane.showInputDialog("Quantos litros foram usados?");    //entra com a quantidade de gasolina usada         
+					litros= Double.parseDouble(litros_usados); 
+		
+				String km_rodado = JOptionPane.showInputDialog("Quantos quilometros foram rodados?"); //entra com a quantidade de km                
+					trip= Double.parseDouble(km_rodado); 
+		
+				String preço_gasolina = JOptionPane.showInputDialog("Qual o preço da gasolina? (use ponto no lugar da vírgula)");  //entra com o preço da gasolina              
+					gasolina= Double.parseDouble(preço_gasolina); 
+		
+		
+								consumo = trip / litros; 
+							
+								custo = gasolina * litros; 
+			
+	
+		JOptionPane.showMessageDialog(null, "Sua média de consumo foi: " + consumo + " km/litro\n" + "Você gastou R$: " + custo);
+			}
+			
+			
+		
+		
+		String opcao_usuario2 = JOptionPane.showInputDialog("Deseja calcular seu tempo de trajeto? \n Para NÂO digite 0 \n Para SIM digite 1");
+		option = Integer.parseInt(opcao_usuario2);
+		
+		if (option != 0)
+			{
+			
+			String distancia_viagem = JOptionPane.showInputDialog("Qual a distância da viagem em KM?");              
+			distancia = Double.parseDouble(distancia_viagem); 
+			
+			String velocidade_media = JOptionPane.showInputDialog("Qual a velocidade média em KM/h?");              
+			vmedia = Double.parseDouble(velocidade_media); 
+			
+			tempo = distancia/vmedia;
+			
+			JOptionPane.showMessageDialog(null, "Sua viagem levará: " + 60*tempo + " minutos");
+			
+			}		
+	}
+
+}
