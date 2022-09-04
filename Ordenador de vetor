@@ -1,0 +1,32 @@
+import javax.swing.JOptionPane;
+
+public class ordena_vetor {
+
+	public static void main(String[] args) {
+		
+		int vetor[] = {3,2,5,8,1,20,1};
+		int aux = 0;
+		//sysou + ctrl espaço = atalho	
+		
+		for (int componente_vetor : vetor) {
+		//for ( int x = 0; x < vetor.length; ++x) {
+			  
+			for(int i=0; i<(vetor.length-1); ++i ){
+					 	
+				if(vetor[i] > vetor[i+1] ) {
+				
+				aux = vetor[i];
+				vetor[i] = vetor [i+1];
+				vetor[i+1]=aux;
+				}	
+			}	
+		}
+				
+					//for ( int x = 0; x < vetor.length; ++x) {
+					for (int comp : vetor)	{
+					System.out.println(comp + " ");
+		
+					}
+			}
+
+}
