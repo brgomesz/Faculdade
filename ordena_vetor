@@ -1,0 +1,24 @@
+import java.util.Arrays;
+
+public class Ordenar_array_ex_aula {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] vetor = {2,9,3,5,2};
+		
+		OrdenaVetor(vetor);
+		
+	}
+	
+	static void OrdenaVetor (int [] v) {
+		
+		Arrays.sort(v);
+	
+		
+		for(int i=0; i<=4; i++) {
+			
+			System.out.println(v[i] + " ");
+			
+		}
+	}
+}
