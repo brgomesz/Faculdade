@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+//classe
+public class dobro_aula {
+//método
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double valor;
+		Scanner entrada = new Scanner(System.in);		//declarando a variavel scan (abrindo a string)
+		
+		
+		
+		System.out.println("Digite um valor: ");         
+		valor = entrada.nextDouble(); 					//entrada de valo na string scan 
+		
+		System.out.println("O dobro é: " +(2*valor));
+		
+		entrada.close(); 
+		
+		
+		
+		
+	}
+
+}
