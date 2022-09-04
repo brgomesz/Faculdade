@@ -1,0 +1,59 @@
+import javax.swing.JOptionPane;
+
+public class numero_maior {
+
+	public static void main(String[] args) {
+	
+		int num1;
+		int num2;
+		int num3; 
+		int maior_atual;
+		//int maior; 
+		
+		
+		
+		String NUMERO_1_USUARIO = JOptionPane.showInputDialog("Digite o primeiro numero"); 
+		num1 = Integer.parseInt(NUMERO_1_USUARIO);
+
+		String NUMERO_2_USUARIO = JOptionPane.showInputDialog("Digite o segundo numero"); 
+		num2 = Integer.parseInt(NUMERO_2_USUARIO);
+
+		String NUMERO_3_USUARIO = JOptionPane.showInputDialog("Digite o terceiro numero"); 
+		num3 = Integer.parseInt(NUMERO_3_USUARIO);
+
+		
+		maior_atual = num1; 
+		
+		
+			if (num1>num2)
+			
+			{
+			maior_atual = num1;				
+			
+			}
+			else 
+				maior_atual = num2; 
+			
+			if (maior_atual<num3)
+			{
+				maior_atual = num3;
+								
+			}
+			
+					
+			
+			if (num1 == num2 && num1 == num3)
+		{
+			
+			JOptionPane.showMessageDialog(null, "todos os números são:" + maior_atual);
+		}
+		
+		else
+			
+		
+		JOptionPane.showMessageDialog(null, "o maior número é:" + maior_atual);
+		
+				
+	}
+
+}
