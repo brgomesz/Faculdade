@@ -1,0 +1,32 @@
+import javax.swing.JOptionPane;
+
+public class contador {
+
+	public static void main(String[] args) {
+		//Inserir um número e mostrar a contagem de zero até N
+		
+		int numero_usuario;
+		int provisorio = 0;
+	
+		String numero = JOptionPane.showInputDialog("Escreva um número maior que zero");              
+		numero_usuario = Integer.parseInt(numero); 									
+		
+			if (numero_usuario > 0)
+			
+			
+			{
+				while (provisorio < numero_usuario) 
+				
+				{				
+				
+						provisorio = provisorio +1;
+				
+						//JOptionPane.showMessageDialog(null, + provisorio + " \n");
+						System.out.println ( provisorio );
+				}
+									
+				//JOptionPane.showMessageDialog(null, + provisorio + " \n");
+			}
+	}
+
+}
