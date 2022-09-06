@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class operador_resto {
+
+	public static void main(String[] args) {
+		//calculando se o número é par ou impar
+		// operador RESTO: %
+		
+		int numero; int auxiliar;
+		
+		System.out.println("Digite um número para descobrir se ele é par! ");
+		Scanner entrada = new Scanner(System.in);
+		
+		numero = entrada.nextInt();
+		
+			if(numero%2 != 0 ) {
+			
+				System.out.println(numero + " é impar");
+			
+			}
+			else {
+				System.out.println(numero + " é par");
+				}
+
+	}
+
+}
