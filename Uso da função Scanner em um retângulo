@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class testando_variavel_scanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int base;
+		int lado; 
+		
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o valor da base");
+		base = entrada.nextInt(); 
+		
+		System.out.println("Digite o valor do lado");
+		lado = entrada.nextInt(); 
+		
+		int area;
+		area = lado * base;
+		//JOptionPane.showMessageDialog(null, "Área do retangulo" + lado*base);
+		System.out.println("Área: " + area);
+	}
+
+}
