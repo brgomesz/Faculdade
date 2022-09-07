@@ -10,11 +10,17 @@ public class Adivinhe_o_numero {
 		Random randomico = new Random(); 
 		
 		int tentativas = 0 ;
+		//int chances = 0; 
 		boolean sucesso = false;  
-		int sorteio = randomico.nextInt(3);	
+		int sorteio = randomico.nextInt(9);	
+		
+		System.out.println("Quantas chances você precisa?");
+		int chances = entrada.nextInt(); 
+		
+		
 		
 		System.out.println("Chute um número de 0 a 10");
-		while(sucesso == false && tentativas < 3) {
+		while(sucesso == false && tentativas < chances) {
 			
 			int chute = entrada.nextInt();
 		
@@ -24,16 +30,22 @@ public class Adivinhe_o_numero {
 				System.out.println("Você acertou");
 				}
 			
-				if (tentativas < 2 && sucesso == false) {
-					System.out.println("Tente novamente");				
+				if (tentativas < chances-1 && sucesso == false) {
+					if(chute<sorteio) {
+					
+					System.out.println("Muito baixo");	
+					}
+					if(chute>sorteio) {
+						System.out.println("Muito alto");
+					}
 				}
 				tentativas ++;
 				
 		}
 		
-		if (tentativas == 3 && sucesso == false ) {
+		if (tentativas == chances && sucesso == false ) {
 			System.out.println("Você faiô");
-			System.out.println(sorteio);
+			System.out.println("o número era: " + sorteio);
 		}
 		
 
