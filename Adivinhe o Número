@@ -27,16 +27,18 @@ public class Adivinhe_o_numero {
 					
 				if(chute == sorteio) {
 				sucesso = true;
-				System.out.println("Você acertou");
+				System.out.println("Você acertou em " + tentativas + " tentativas");
 				}
 			
 				if (tentativas < chances-1 && sucesso == false) {
 					if(chute<sorteio) {
 					
 					System.out.println("Muito baixo");	
+					System.out.println("você ainda tem: "+ (chances - tentativas - 1) + " tentativas");
 					}
 					if(chute>sorteio) {
 						System.out.println("Muito alto");
+						System.out.println("você ainda tem: "+ (chances - tentativas - 1) + " tentativas");
 					}
 				}
 				tentativas ++;
