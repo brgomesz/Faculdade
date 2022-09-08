@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class comando_switch {
+
+	public static void main(String[] args) {
+		//Montando um exemplo do uso da função SWITCH
+		
+		Scanner entrada = new Scanner(System.in); 
+				
+		
+		System.out.println("Digite seu numero de 1 a 3 ");
+		int numero = entrada.nextInt(); 
+		
+		switch(numero){
+		
+		case 1: 
+		System.out.println("Seu número é " + numero);
+		break; 
+		
+		case 2: 
+			System.out.println("Seu número é " + numero);
+			break; 
+			
+		case 3: 
+			System.out.println("Seu número é " + numero);
+			break; 	
+		
+		default: 
+			System.out.println("Número não está nas opções");
+			break; 
+		
+		}
+		
+
+	}
+
+}
